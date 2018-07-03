@@ -875,6 +875,11 @@ a {
   margin-left: .2em;
 }
 
+.languages > img {
+  margin: 1em;
+  opacity: .7;
+}
+
 /**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
