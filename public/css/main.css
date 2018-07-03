@@ -870,8 +870,8 @@ a {
 }
 
 .mi.intext {
-  -webkit-transform: translateY(.2em);
-          transform: translateY(.2em);
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
   margin-left: .2em;
 }
 

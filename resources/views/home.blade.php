@@ -24,7 +24,7 @@
         </div>
 
         <h2 class="header mt-8">
-            Projekte
+            Meine Projekte
         </h2>
         <div class="flex justify-center items-stretch flex-wrap p-4">
             <div class="project">

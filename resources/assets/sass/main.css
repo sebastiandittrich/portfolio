@@ -189,7 +189,7 @@ a {
 }
 
 .mi.intext {
-    transform: translateY(.2em);
+    transform: translateY(15%);
     margin-left: .2em;
 }
 
