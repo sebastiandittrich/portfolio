@@ -188,6 +188,11 @@ a {
     opacity: 1;
 }
 
+.mi.intext {
+    transform: translateY(.2em);
+    margin-left: .2em;
+}
+
 
  /**
   * This injects all of Tailwind's utility classes, generated based on your

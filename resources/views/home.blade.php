@@ -8,7 +8,7 @@
         <title>{{ config('app.name') }}</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ asset('css/micon.css') }}">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
@@ -33,7 +33,10 @@
                 </h3>
                 <img src="{{ asset('projects/asozialesnetzwerk/hero.png') }}" alt="" class="hero">
                 <img src="{{ asset('projects/asozialesnetzwerk/logo.png') }}" alt="" class="logo">
-                <a href="https://asozialesnetzwerk.com">Ansehen</a>
+                <a href="https://asozialesnetzwerk.com">
+                    Ansehen
+                    <i class="mi mi-ChevronRight intext"></i>
+                </a>
             </div>
             <div class="project">
                 <h3 class="header">
@@ -41,7 +44,10 @@
                 </h3>
                 <img src="{{ asset('projects/todoninja/hero.png') }}" alt="" class="hero">
                 <img src="{{ asset('projects/todoninja/logo.png') }}" alt="" class="logo">
-                <a href="https://todoninja.de">Ansehen</a>
+                <a href="https://todoninja.de">
+                    Ansehen
+                    <i class="mi mi-ChevronRight intext"></i>
+                </a>
             </div>
             <div class="project">
                 <h3 class="header">
@@ -49,7 +55,10 @@
                 </h3>
                 <img src="{{ asset('projects/greymatter/hero.png') }}" alt="" class="hero">
                 <img src="{{ asset('projects/greymatter/logo.jpg') }}" alt="" class="logo">
-                <a href="http://greymatter.asozialesnetzwerk.com">Ansehen</a>
+                <a href="http://greymatter.asozialesnetzwerk.com">
+                    Ansehen
+                    <i class="mi mi-ChevronRight intext"></i>
+                </a>
             </div>
         </div>
 

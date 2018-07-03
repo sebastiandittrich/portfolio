@@ -869,6 +869,12 @@ a {
   opacity: 1;
 }
 
+.mi.intext {
+  -webkit-transform: translateY(.2em);
+          transform: translateY(.2em);
+  margin-left: .2em;
+}
+
 /**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
