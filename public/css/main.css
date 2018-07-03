@@ -777,6 +777,18 @@ table {
   padding: 1rem;
 }
 
+a {
+  color: #3490dc;
+  padding: 1rem;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) or (-webkit-backdrop-filter: blur(10px)) {
   .name {
             backdrop-filter: blur(10px);
@@ -789,7 +801,7 @@ table {
           box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
   background-color: #fff;
   display: grid;
-  grid-template: "hero" auto "title" auto / 15em;
+  grid-template: "hero" auto "title" auto "link" auto / 15em;
   border: 1px solid #e6e6e6;
   justify-items: stretch;
   -webkit-transition: all 200ms ease-in-out;
@@ -815,6 +827,7 @@ table {
 
 .project > .header {
   grid-area: title;
+  justify-self: center;
 }
 
 .project > .hero {
@@ -840,6 +853,13 @@ table {
   -webkit-transform: scale(0);
           transform: scale(0);
   z-index: -1;
+}
+
+.project > a {
+  grid-area: link;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: stretch;
 }
 
 .project:hover > .logo {

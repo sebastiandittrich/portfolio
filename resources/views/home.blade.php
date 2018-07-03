@@ -27,27 +27,30 @@
             Projekte
         </h2>
         <div class="flex justify-center items-stretch flex-wrap p-4">
-            <a class="project" href="https://asozialesnetzwerk.com">
+            <div class="project">
                 <h3 class="header">
                     Asoziales Netzwerk
                 </h3>
                 <img src="{{ asset('projects/asozialesnetzwerk/hero.png') }}" alt="" class="hero">
                 <img src="{{ asset('projects/asozialesnetzwerk/logo.png') }}" alt="" class="logo">
-            </a>
-            <a class="project" href="https://todoninja.de">
+                <a href="https://asozialesnetzwerk.com">Ansehen</a>
+            </div>
+            <div class="project">
                 <h3 class="header">
                     Todoninja
                 </h3>
                 <img src="{{ asset('projects/todoninja/hero.png') }}" alt="" class="hero">
                 <img src="{{ asset('projects/todoninja/logo.png') }}" alt="" class="logo">
-            </a>
-            <a class="project" href="https://greymatter.asozialesnetzwerk.com">
+                <a href="https://todoninja.de">Ansehen</a>
+            </div>
+            <div class="project">
                 <h3 class="header">
                     Greymatter
                 </h3>
                 <img src="{{ asset('projects/greymatter/hero.png') }}" alt="" class="hero">
                 <img src="{{ asset('projects/greymatter/logo.jpg') }}" alt="" class="logo">
-            </a>
+                <a href="http://greymatter.asozialesnetzwerk.com">Ansehen</a>
+            </div>
         </div>
 
         {{-- <div class="hero">
