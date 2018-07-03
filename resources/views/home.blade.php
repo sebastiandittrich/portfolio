@@ -15,18 +15,18 @@
     </head>
     <body class="font-sans">
 
-        <div class="bg-fixed flex items-end justify-center" style="height: 80vh; background-image: linear-gradient(135deg, #3490dc, #f490dc)">
-            <div class="w-2/3 rounded-lg -mb-8 p-4 shadow-lg name" style="background: rgba(255,255,255,0.7)">
+        <div class="bg-fixed flex items-end justify-center" style="background-image: linear-gradient(135deg, #3490dc, #f490dc)">
+            <div class="w-2/3 rounded-lg -mb-8 mt-8 p-4 shadow-lg name" style="background: rgba(255,255,255,0.7)">
                 <h1 class="header">
                     Sebastian Dittrich
                 </h1>
             </div>
         </div>
 
-        <h2 class="header mt-8">
+        <h2 class="header mt-8 container mx-auto">
             Meine Projekte
         </h2>
-        <div class="flex justify-center items-stretch flex-wrap p-4">
+        <div class="flex justify-center items-stretch flex-wrap p-4 container mx-auto">
             <div class="project">
                 <h3 class="header">
                     Asoziales Netzwerk
