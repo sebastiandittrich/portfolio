@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <h2 class="header mt-8 container mx-auto">
+        <h2 class="header mt-16 container mx-auto">
             Meine Projekte
         </h2>
         <div class="flex justify-center items-stretch flex-wrap p-4 container mx-auto">
