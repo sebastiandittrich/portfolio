@@ -1,0 +1,226 @@
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body > .hero {
+    background: url('../pictures/hero.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+body > .content {
+    min-height: 100vh;
+    background: white;
+}
+
+body > .hero > .name {
+    background: rgba(255,255,255,0.6);
+    padding: 1em;
+    width: 100%;
+}
+
+.header {
+    font-weight: bold;
+    margin: 0px;
+    padding: 1em;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    display: grid;
+    grid-template: "hero" auto "title" auto / 15em;
+    border: 1px solid #e6e6e6;
+    justify-items: stretch;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,.3));
+    transition: all 200ms ease-in-out;
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+.project {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.project:hover {
+    filter: none;
+}
+
+.project > .header {
+    grid-area: title;
+}
+
+.project > .hero {
+    grid-area: hero;
+    width: 100%;
+    height: auto;
+}
+
+@supports(backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px)) {
+    body > .hero > .name {
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+} */
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+ @tailwind preflight;
+
+ /**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+ @tailwind components;
+
+ /**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
+
+  .header {
+    @apply .font-bold .m-0 .p-4;
+}
+
+a {
+    @apply .text-blue .p-4 .no-underline .flex .justify-center;
+}
+
+@supports(backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+    .name {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
+.project {
+    @apply .shadow-md .bg-white;
+    display: grid;
+    grid-template: "hero" auto "title" auto "link" auto / 15em;
+    border: 1px solid #e6e6e6;
+    justify-items: stretch;
+    transition: all 200ms ease-in-out;
+    color: black;
+    text-decoration: none;
+}
+
+.project {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.project:hover {
+    @apply .shadow-lg;
+}
+
+.project:hover > .hero {
+    filter: blur(5px)brightness(.5);
+}
+
+.project > .header {
+    grid-area: title;
+    justify-self: center;
+}
+
+.project > .hero {
+    grid-area: hero;
+    width: 100%;
+    height: auto;
+    transition: all 500ms ease-out;
+}
+
+.project > .logo {
+    @apply .h-32 .w-auto .rounded-full .p-4;
+    grid-area: hero;
+    transition: all 500ms ease-out;
+    align-self: center;
+    justify-self: center;
+    opacity: 0;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.project > a {
+    grid-area: link;
+    align-self: center;
+    justify-self: stretch;
+}
+
+.project:hover > .logo {
+    z-index: 1;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.mi.intext {
+    transform: translateY(15%);
+    margin-left: .2em;
+}
+
+.languages > img {
+    margin: 1em;
+    opacity: .7;
+}
+
+
+ /**
+  * This injects all of Tailwind's utility classes, generated based on your
+  * config file.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/utilities";
+  */
+ @tailwind utilities;
+
+ /**
+  * Here you would add any custom utilities you need that don't come out of the
+  * box with Tailwind.
+  *
+  * Example :
+  *
+  * .bg-pattern-graph-paper { ... }
+  * .skew-45 { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "utilities/background-patterns";
+  * @import "utilities/skew-transforms";
+  *
+*/
