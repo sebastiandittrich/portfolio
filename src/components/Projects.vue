@@ -23,6 +23,7 @@
     }
     .project > div {
         grid-area: content;
+        justify-self: start;
     }
 </style>
 
