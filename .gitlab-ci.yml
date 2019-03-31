@@ -37,7 +37,7 @@ deploy:
   stage: deploy
   environment: production
   only:
-    - tags
+    - master
   variables:
     GIT_STRATEGY: none
   script:
@@ -52,7 +52,7 @@ deploy_beta:
   stage: deploy
   environment: beta
   only:
-    - master
+    - beta
   variables:
     GIT_STRATEGY: none
   script:
