@@ -1,0 +1,64 @@
+stages:
+  - build
+  - deploy
+
+image: node:8.12
+
+before_script:
+  ## Install ssh-agent if not already installed, it is required by Docker.
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+
+  ## Run ssh-agent (inside the build environment)
+  - eval $(ssh-agent -s)
+
+  ## Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+
+  ## Create the SSH directory and give it the right permissions
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+
+  ## Assuming you created the SSH_KNOWN_HOSTS variable, uncomment the following two lines.
+  - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+
+build:
+  stage: build
+  script:
+    - echo $(git rev-parse --short=8 HEAD) > .commithash
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+      - .commithash
+
+deploy:
+  stage: deploy
+  environment: production
+  only:
+    - tags
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - deploymentsdir="~/app/deployments"
+    - currentdir="~/app/current"
+    - dirname="$deploymentsdir/$(date "+%Y%m%d-%H%M%S")-$(cat .commithash)"
+    - ssh $SSH_USER@$SSH_HOST "mkdir -p $deploymentsdir"
+    - scp -r dist $SSH_USER@$SSH_HOST:$dirname
+    - ssh $SSH_USER@$SSH_HOST "ln -nfs $dirname $currentdir"
+
+deploy_beta:
+  stage: deploy
+  environment: beta
+  only:
+    - master
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - deploymentsdir="~/beta/deployments"
+    - currentdir="~/beta/current"
+    - dirname="$deploymentsdir/$(date "+%Y%m%d-%H%M%S")-$(cat .commithash)"
+    - ssh $SSH_USER@$SSH_HOST "mkdir -p $deploymentsdir"
+    - scp -r dist $SSH_USER@$SSH_HOST:$dirname
+    - ssh $SSH_USER@$SSH_HOST "ln -nfs $dirname $currentdir"
