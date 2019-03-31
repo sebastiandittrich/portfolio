@@ -4,7 +4,7 @@
             class="bg-white shadow-lg hover:shadow-md rounded-lg overflow-hidden mb-4 project transition">
             <img :src="project.image" alt="" class="h-auto w-auto">
             <div class="flex flex-col items-start justify-start p-8 pl-0">
-                <div class="font-bold mb-2 group-hover:text-black"> {{project.name}} </div>
+                <div class="mb-2 link border-none hover:border-none"> {{project.name}} </div>
                 <div> {{project.description}} </div>
             </div>
         </a>

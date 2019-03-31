@@ -17,6 +17,11 @@
       <projects class="self-start mt-4"></projects>
     </div>
 
+    <!-- <div>
+        <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">How to support me</div>
+        <support-me class="mt-4"></support-me>
+    </div> -->
+
   </div>
 </template>
 
@@ -51,9 +56,12 @@
 
 <script>
 import Projects from '@/components/Projects'
+import SupportMe from '@/components/SupportMe'
+
 export default {
   components: {
     Projects,
+    SupportMe,
   },
   computed: {
     age() {

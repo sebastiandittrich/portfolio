@@ -64,7 +64,7 @@ button:focus {
 }
 
   .link {
-      @apply font-bold text-grey-darkest transition border-b-2 border-grey;
+      @apply font-bold text-grey-darkest transition border-b-2 border-grey whitespace-no-wrap;
   }
 
   .link:hover {
