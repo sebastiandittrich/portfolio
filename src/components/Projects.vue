@@ -39,6 +39,12 @@ export default {
                     image: 'img/todoninja.png',
                     url: 'https://todoninja.de'
                 },{
+                    name: 'remember.link',
+                    description: 'A link shortener with customizable and better memorizable links.',
+                    image: 'img/rememberlink.png',
+                    url: 'https://link.playground.todoninja.de'
+                },
+                {
                     name: 'Artfamily',
                     description: 'An online artwork forum for sharing your creations and sketches with artists around the world.',
                     image: 'img/artfamily.jpg',
