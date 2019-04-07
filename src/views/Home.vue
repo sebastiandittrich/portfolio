@@ -13,7 +13,7 @@
     </div>
 
     <div>
-      <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Some of my Projecs</div>
+      <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Some of my Projects</div>
       <projects class="self-start mt-4"></projects>
     </div>
 
