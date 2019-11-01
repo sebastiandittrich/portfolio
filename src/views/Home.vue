@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 flex flex-col items-center justify-start py-16" style="min-height: 100vh">
+  <div class="bg-grey-lightest p-8 flex flex-col items-center justify-start py-16" style="min-height: 100vh">
     <div class="flex flex-col items-center space-around">
       <div class="avatar-img rounded-full h-48 w-48 bg-white flex flex-row items-center align-stretch overflow-hidden">
         <img src="/img/avatar.jpg" >

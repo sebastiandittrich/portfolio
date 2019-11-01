@@ -1,6 +1,6 @@
 <template>
   <transition name="opacity">
-    <div v-images-loaded="imagesloaded" v-show="imagesready" class="bg-grey-lightest">
+    <div v-images-loaded="imagesloaded" v-show="($route.path != '/') || imagesready">
       <router-view/>
       <div class="p-8 bg-grey-lighter flex flex-col justify-center items-center">
           <div class="text-center leading-loose">
