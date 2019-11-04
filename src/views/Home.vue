@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <!-- <div class="container mx-auto max-w-lg">
+    <div class="container mx-auto max-w-lg">
       <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Blog Highlights</div>
       <div class="shadow-md bg-white rounded-lg mt-4">
         <blog-overview v-for="highlight of highlight" :key="highlight.slug" :image="false" class="p-6 border-b" :article="highlight"></blog-overview>
@@ -27,7 +27,7 @@
       <router-link to="/blog" class="block mt-4 rounded-lg bg-grey-light p-2 font-bold uppercase leading-tight text-center text-sm">
         Read more
       </router-link>
-    </div> -->
+    </div>
 
     <div>
       <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Some of my Projects</div>
@@ -39,7 +39,6 @@
         <support-me class="mt-4"></support-me> -->
     </div>
 
-  </div>
 </template>
 
 <style scoped>

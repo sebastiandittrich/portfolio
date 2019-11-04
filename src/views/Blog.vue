@@ -24,6 +24,9 @@ import loading_entries from '@/blog'
 import BlogOverview from '@/components/blog/Overview'
 
 export default {
+    metaInfo: {
+        title: 'Blog'
+    },
     components: {
         BlogOverview,
     },

@@ -29,12 +29,26 @@
 
 <script>
 export default {
+    metaInfo() {
+        console.log(this)
+        return {
+            title: `${this.meta.title || 'Article'} | Blog | Sebastian Dittrich`,
+            meta: [
+               { vmid: 'description', name: 'description', content: this.meta.description },
+            ]
+        }
+    },
     props: {
         slug: String
     },
     data: () => ({
         article: null
     }),
+    computed: {
+        meta() {
+            return this.article ? this.article.meta : {}
+        }
+    },
     methods: {
         async loadArticle() {
             this.article = (await import('@/blog/' + this.slug + '.md')).default

@@ -20,6 +20,13 @@ import '@/assets/css/transitions.css'
 import imagesLoaded from 'vue-images-loaded'
 
 export default {
+  metaInfo: {
+    title: 'Home',
+    titleTemplate: '%s | Sebastian Dittrich',
+    meta: [
+        { vmid: 'description', name: 'description', content: 'I am Sebastian Dittrich and this is my portfolio!' }
+    ]
+  },
   directives: {
     imagesLoaded,
   },
