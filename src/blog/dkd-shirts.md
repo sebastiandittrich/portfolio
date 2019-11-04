@@ -1,3 +1,13 @@
+<script>
+    export default {
+        meta: {
+            title: 'Die DKD Tshirts',
+            description: 'Eure Meinung zu den DKD Tshirts zählt!',
+            image: '/img/blog/minecraft.png'
+        }
+    }
+</script>
+
 <img src="/img/blog/dkd.png">
 
 # Die DKD Tshirts

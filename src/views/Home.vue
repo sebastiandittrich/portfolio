@@ -17,10 +17,19 @@
       <projects class="self-start mt-4"></projects>
     </div>
 
+    <!-- <div class="container mx-auto max-w-lg">
+      <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Blog Highlights</div>
+
+      <blog-overview v-for="highlight of highlight" :key="highlight.slug" class="bg-white rounded-lg mt-4 p-6 shadow-md" :article="highlight"></blog-overview>
+      <router-link to="/blog" class="block mt-4 rounded-lg bg-grey-light p-2 font-bold uppercase leading-tight text-center text-sm">
+          Read more
+      </router-link>
+    </div> -->
+
     <!-- <div>
         <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">How to support me</div>
-        <support-me class="mt-4"></support-me>
-    </div> -->
+        <support-me class="mt-4"></support-me> -->
+    </div>
 
   </div>
 </template>
@@ -57,15 +66,25 @@
 <script>
 import Projects from '@/components/Projects'
 import SupportMe from '@/components/SupportMe'
+import BlogOverview from '@/components/blog/Overview'
+
+import { highlight } from '@/blog'
 
 export default {
   components: {
     Projects,
     SupportMe,
+    BlogOverview,
   },
+  data: () => ({
+      loading_highlight: highlight,
+  }),
   computed: {
     age() {
       return Math.floor((new Date().getTime() - new Date('10/30/2001').getTime()) / 1000 / 60 / 60 / 24 / 365.25)
+    },
+    highlight() {
+        return this.loading_highlight.filter(item => item.loaded)
     }
   }
 };
