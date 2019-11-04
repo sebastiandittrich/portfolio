@@ -1,6 +1,6 @@
 <template>
     <router-link :to="'/blog/' + article.slug" class="block">
-        <img :src="article.image" alt="" class="rounded-lg mb-4">
+        <img v-if="image" :src="article.image" alt="" class="rounded-lg mb-4">
         <div class="font-bold text-xl text-black">
             {{ article.title }}
         </div>
@@ -14,6 +14,10 @@
 export default {
     props: {
         article: Object,
+        image: {
+            default: true,
+            type: Boolean,
+        },
     }
 }
 </script>

@@ -1,8 +1,15 @@
 <template>
   <div class="bg-grey-lightest p-8 flex flex-col items-center justify-start py-16" style="min-height: 100vh">
     <div class="flex flex-col items-center space-around">
-      <div class="avatar-img rounded-full h-48 w-48 bg-white flex flex-row items-center align-stretch overflow-hidden">
+      <!-- <div class="avatar-img rounded-full h-48 w-48 bg-white flex flex-row items-center align-stretch overflow-hidden">
         <img src="/img/avatar.jpg" >
+      </div> -->
+      <div class="p-2 border border-blue-lighter rounded-full flex flex-row items-center justify-center">
+        <div class="p-2 border-2 border-blue-light rounded-full flex flex-row items-center justify-center">
+          <div class="p-2 border-4 border-blue rounded-full flex flex-row items-center justify-center">
+              <img src="/img/avatar.jpg" class="w-48 h-48 rounded-full">
+          </div>
+        </div>
       </div>
       <div class="mt-16 text-4xl text-center text-black">
         Hello, I'm <span class="font-bold whitespace-no-wrap">Sebastian Dittrich</span>.
@@ -12,19 +19,20 @@
       </div>
     </div>
 
+    <!-- <div class="container mx-auto max-w-lg">
+      <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Blog Highlights</div>
+      <div class="shadow-md bg-white rounded-lg mt-4">
+        <blog-overview v-for="highlight of highlight" :key="highlight.slug" :image="false" class="p-6 border-b" :article="highlight"></blog-overview>
+      </div>
+      <router-link to="/blog" class="block mt-4 rounded-lg bg-grey-light p-2 font-bold uppercase leading-tight text-center text-sm">
+        Read more
+      </router-link>
+    </div> -->
+
     <div>
       <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Some of my Projects</div>
       <projects class="self-start mt-4"></projects>
     </div>
-
-    <!-- <div class="container mx-auto max-w-lg">
-      <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Blog Highlights</div>
-
-      <blog-overview v-for="highlight of highlight" :key="highlight.slug" class="bg-white rounded-lg mt-4 p-6 shadow-md" :article="highlight"></blog-overview>
-      <router-link to="/blog" class="block mt-4 rounded-lg bg-grey-light p-2 font-bold uppercase leading-tight text-center text-sm">
-          Read more
-      </router-link>
-    </div> -->
 
     <!-- <div>
         <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">How to support me</div>
