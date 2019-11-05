@@ -47,7 +47,7 @@ export default {
                 {
                     name: 'Artfamily',
                     description: 'An online artwork forum for sharing your creations and sketches with artists around the world.',
-                    image: 'img/artfamily.jpg',
+                    image: 'img/artfamily.png',
                     url: 'https://art.todoninja.de'
                 },{
                     name: 'Asocial Network',

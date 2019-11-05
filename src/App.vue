@@ -1,14 +1,10 @@
 <template>
   <transition name="opacity">
-    <div v-images-loaded="imagesloaded" v-show="($route.path != '/') || imagesready" style="display: grid; grid-template: 'content' 1fr 'footer' auto / 100%">
+    <div v-images-loaded="imagesloaded" v-show="($route.path != '/') || imagesready" style="display: grid; grid-template: 'content' 1fr 'footer' auto / 100%" class="min-h-screen">
       <keep-alive>
         <router-view style="grid-area: content"/>
       </keep-alive>
-      <div class="p-8 bg-grey-lighter flex flex-col justify-center items-center" style="grid-area: footer">
-          <div class="text-center leading-loose">
-              Built with <a href="http://tailwindcss.com" target="_blank" class="link">Tailwind CSS</a>, <a target="_blank" href="http://vuejs.org" class="link">Vue</a> and <a target="_blank" href="https://code.visualstudio.com/" class="link">Visual Studio Code</a>
-          </div>
-      </div>
+      <app-footer style="grid-area: footer"></app-footer>
     </div>
   </transition>
 </template>
@@ -18,6 +14,7 @@ import '@/assets/css/main.css'
 import '@/assets/css/iconfont.css'
 import '@/assets/css/transitions.css'
 import imagesLoaded from 'vue-images-loaded'
+import AppFooter from '@/components/Footer'
 
 export default {
   metaInfo: {
@@ -29,6 +26,9 @@ export default {
   },
   directives: {
     imagesLoaded,
+  },
+  components: {
+      AppFooter,
   },
   data() {
     return {

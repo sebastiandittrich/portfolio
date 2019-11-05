@@ -1,7 +1,7 @@
 <template>
     <div class="bg-grey-lighter">
         <div class="p-8 border-b">
-            <div class="text-sm flex flex-row justify-between items-center">
+            <div class="text-sm flex flex-row justify-between items-center container mx-auto max-w-lg">
                 <h1 class="text-black text-xl text-center">Sebastian's Blog</h1>
                 <router-link to="/" class="link border-none">
                     <i class="feather icon-chevron-left"></i>

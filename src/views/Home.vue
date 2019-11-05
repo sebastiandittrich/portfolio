@@ -1,9 +1,6 @@
 <template>
   <div class="bg-grey-lightest p-8 flex flex-col items-center justify-start py-16" style="min-height: 100vh">
     <div class="flex flex-col items-center space-around">
-      <!-- <div class="avatar-img rounded-full h-48 w-48 bg-white flex flex-row items-center align-stretch overflow-hidden">
-        <img src="/img/avatar.jpg" >
-      </div> -->
       <div class="p-2 border border-blue-lighter rounded-full flex flex-row items-center justify-center">
         <div class="p-2 border-2 border-blue-light rounded-full flex flex-row items-center justify-center">
           <div class="p-2 border-4 border-blue rounded-full flex flex-row items-center justify-center">
@@ -34,9 +31,6 @@
       </router-link>
     </div>
 
-    <!-- <div>
-        <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">How to support me</div>
-        <support-me class="mt-4"></support-me> -->
     </div>
 
 </template>
@@ -74,6 +68,7 @@
 import Projects from '@/components/Projects'
 import SupportMe from '@/components/SupportMe'
 import BlogOverview from '@/components/blog/Overview'
+import SocialProfile from '@/components/SocialProfile'
 
 import { highlight } from '@/blog'
 
@@ -82,6 +77,7 @@ export default {
     Projects,
     SupportMe,
     BlogOverview,
+    SocialProfile
   },
   data: () => ({
       loading_highlight: highlight,
