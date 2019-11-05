@@ -77,6 +77,8 @@ export default {
     p
         @apply mb-8
         line-height: 150%
+        & + p
+            @apply -mt-4
     blockquote
         @apply mb-8 border-l-4 border-blue p-4
         p
@@ -89,6 +91,7 @@ export default {
         overflow-x: auto;
         color: #abb2bf;
         background: #282c34
+        line-height 150%
     img
         @apply mb-4 rounded-lg h-auto mx-auto block
         max-height 50vh
