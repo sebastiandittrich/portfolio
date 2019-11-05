@@ -16,7 +16,7 @@
             <div class="font-bold text-center uppercase tracking-wide text-sm mb-8">About the author</div>
             <div class="flex flex-row items-center">
                 <div class="p-1 border-2 border-blue rounded-full flex flex-row items-center justify-center">
-                    <img src="/img/avatar.jpg" class="w-12 h-12 rounded-full">
+                    <img src="/img/avatar.jpg" class="w-12 h-12 rounded-full" alt="Me taking a Picture with my mobile phone">
                 </div>
                 <div class="ml-8 flex flex-col items-start justify-start">
                     <div class="font-bold text-black">Sebastian Dittrich</div>

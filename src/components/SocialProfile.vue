@@ -1,7 +1,7 @@
 <template>
     <div>
-        <a :href="link" target="_blank">
-            <img :src="image" class="w-8 h-8" :alt="name" :title="name">
+        <a rel="noopener" :href="link" target="_blank">
+            <img :src="image" class="w-8 h-auto" :alt="name" :title="name">
         </a>
     </div>
 </template>

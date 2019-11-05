@@ -4,13 +4,13 @@
       <div class="p-2 border border-blue-lighter rounded-full flex flex-row items-center justify-center">
         <div class="p-2 border-2 border-blue-light rounded-full flex flex-row items-center justify-center">
           <div class="p-2 border-4 border-blue rounded-full flex flex-row items-center justify-center">
-              <img src="/img/avatar.jpg" class="w-48 h-48 rounded-full">
+              <img src="/img/avatar.jpg" class="w-48 h-48 rounded-full" alt="Me taking a Picture with my mobile phone">
           </div>
         </div>
       </div>
-      <div class="mt-16 text-4xl text-center text-black">
+      <h1 class="mt-16 text-4xl text-center text-black font-normal">
         Hello, I'm <span class="font-bold whitespace-no-wrap">Sebastian Dittrich</span>.
-      </div>
+      </h1>
       <div class="mt-8 text-2xl text-center">
         I'm a <span class="font-bold">{{age}} year old</span> programmer living in Dresden, <span class="font-bold"> Ge<span class="text-red-light">rma</span><span class="text-yellow-dark">ny</span></span>
       </div>

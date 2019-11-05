@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a v-for="project of projects" :key="project.name" :href="project.url" target="_blank"
+        <a v-for="project of projects" :key="project.name" :href="project.url" target="_blank" rel="noopener"
             class="bg-white shadow-lg hover:shadow-md rounded-lg overflow-hidden mb-4 project transition">
             <img :src="project.image" alt="" class="h-auto w-auto">
             <div class="flex flex-col items-start justify-start p-8 pl-0">

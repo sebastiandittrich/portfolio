@@ -10,10 +10,10 @@
         </div>
 
         <div class="text-center leading-loose mt-16">
-            Built with <a href="http://tailwindcss.com" target="_blank" class="link">Tailwind CSS</a>, <a target="_blank" href="http://vuejs.org" class="link">Vue</a> and <a target="_blank" href="https://code.visualstudio.com/" class="link">Visual Studio Code</a>
+            Built with <a href="http://tailwindcss.com" target="_blank" rel="noopener" class="link">Tailwind CSS</a>, <a target="_blank" rel="noopener" href="http://vuejs.org" class="link">Vue</a> and <a rel="noopener" target="_blank" href="https://code.visualstudio.com/" class="link">Visual Studio Code</a>
         </div>
         <div class="mt-4">
-            Special thanks to <a class="link" href="https://www.instagram.com/j1ss3l/">Johannes Müller</a> for the avatar image!
+            Special thanks to <a class="link" target="_blank" href="https://www.instagram.com/j1ss3l/" rel="noopener">Johannes Müller</a> for the avatar image!
         </div>
     </div>
 </template>
