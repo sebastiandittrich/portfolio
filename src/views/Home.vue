@@ -19,6 +19,11 @@
       </div>
     </div>
 
+    <div>
+      <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Some of my Projects</div>
+      <projects class="self-start mt-4"></projects>
+    </div>
+
     <div class="container mx-auto max-w-lg">
       <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Blog Highlights</div>
       <div class="shadow-md bg-white rounded-lg mt-4">
@@ -27,11 +32,6 @@
       <router-link to="/blog" class="block mt-4 rounded-lg bg-grey-light p-2 font-bold uppercase leading-tight text-center text-sm">
         Read more
       </router-link>
-    </div>
-
-    <div>
-      <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Some of my Projects</div>
-      <projects class="self-start mt-4"></projects>
     </div>
 
     <!-- <div>
