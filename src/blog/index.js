@@ -18,13 +18,11 @@ const article = (slug) => {
 }
 
 const articles = [
-    article('dkd-shirts'),
-    article('php-docker-tutorial'),
+    article('first-article'),
 ]
 
 export default articles
 
 export const highlight = [
-    article('php-docker-tutorial'),
-    article('dkd-shirts'),
+    article('first-article'),
 ]
