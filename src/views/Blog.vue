@@ -9,7 +9,7 @@
                 </router-link>
             </div>
         </div>
-        <div class="article container max-w-lg mx-auto lg:shadow-lg lg:rounded-lg bg-white lg:mt-8 lg:mb-16">
+        <div class="article container max-w-lg mx-auto md:shadow-lg md:rounded-lg bg-white md:mt-8 md:mb-16">
             <div v-for="article of entries" :key="article.slug" class="py-4 border-b">
                 <blog-overview :article="article" class="p-4"></blog-overview>
             </div>

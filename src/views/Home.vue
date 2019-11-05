@@ -4,7 +4,7 @@
       <div class="p-2 border border-blue-lighter rounded-full flex flex-row items-center justify-center">
         <div class="p-2 border-2 border-blue-light rounded-full flex flex-row items-center justify-center">
           <div class="p-2 border-4 border-blue rounded-full flex flex-row items-center justify-center">
-              <img src="/img/avatar.jpg" class="w-48 h-48 rounded-full" alt="Me taking a Picture with my mobile phone">
+              <img src="/img/avatar.pjpeg" class="w-48 h-48 rounded-full" alt="Me taking a Picture with my mobile phone">
           </div>
         </div>
       </div>

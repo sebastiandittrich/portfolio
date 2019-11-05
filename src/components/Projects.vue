@@ -36,12 +36,12 @@ export default {
                 {
                     name: 'Todoninja',
                     description: 'An extended Todo-App optimized for mobile usage.',
-                    image: 'img/todoninja.png',
+                    image: 'img/todoninja.svg',
                     url: 'https://todoninja.de'
                 },{
                     name: 'remember.link',
                     description: 'A link shortener with customizable and better memorizable links.',
-                    image: 'img/rememberlink.png',
+                    image: 'img/rememberlink.svg',
                     url: 'https://link.playground.todoninja.de'
                 },
                 {
