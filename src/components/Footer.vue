@@ -2,7 +2,7 @@
     <div class="p-8 bg-grey-lighter flex flex-col justify-center items-center border-t">
         <div class="font-bold text-sm tracking-wide uppercase">Follow me on my social network accounts!</div>
         <div class="flex flex-row items-center justify-center mt-8">
-            <social-profile link="https://twitter.com/@schnaubolaut" image="/img/twitter.svg.webp" name="Twitter"></social-profile>
+            <social-profile link="https://twitter.com/@schnaubolaut" image="/img/twitter.png" name="Twitter"></social-profile>
             <social-profile link="https://art.todoninja.de/@basti" image="/img/artfamily.png" class="ml-8" name="Artfamily"></social-profile>
             <social-profile link="https://www.instagram.com/minus_banane/" image="/img/instagram.png" class="ml-8" name="Instagram"></social-profile>
             <social-profile link="https://github.com/sebastiandittrich" image="/img/github.png" class="ml-8" name="Github"></social-profile>
