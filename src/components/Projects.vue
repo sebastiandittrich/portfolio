@@ -49,7 +49,14 @@ export default {
                     description: 'An online artwork forum for sharing your creations and sketches with artists around the world.',
                     image: 'img/artfamily.png',
                     url: 'https://art.todoninja.de'
-                },{
+                },
+                {
+                    name: 'DKD',
+                    description: 'A kind of fashion brand that we wear and design with my friends.',
+                    image: 'img/dkd.svg',
+                    url: 'https://dkdmerch.de'
+                },
+                {
                     name: 'Asocial Network',
                     description: 'This is an anti-social network inspired by the "Känguru-Chroniken" authored by Marc Uwe Kling.',
                     image: 'img/asozialesnetzwerk.png',
