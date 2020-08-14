@@ -16,7 +16,7 @@
             <div class="font-bold text-center uppercase tracking-wide text-sm mb-8">About the author</div>
             <router-link to="/" class="flex flex-row items-center">
                 <div class="p-1 border-2 border-blue rounded-full flex flex-row items-center justify-center">
-                    <img src="/img/avatar.pjpeg" class="w-12 h-12 rounded-full" alt="Me taking a Picture with my mobile phone">
+                    <img :src="images.AvatarImage" class="w-12 h-12 rounded-full" alt="Me taking a Picture with my mobile phone">
                 </div>
                 <div class="ml-8 flex flex-col items-start justify-start">
                     <div class="font-bold text-black">Sebastian Dittrich</div>
@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import AvatarImage from '@/assets/images/avatar.jpg'
+
 export default {
     metaInfo() {
         return {
@@ -41,7 +43,8 @@ export default {
         slug: String
     },
     data: () => ({
-        article: null
+        article: null,
+        images: { AvatarImage }
     }),
     computed: {
         meta() {
