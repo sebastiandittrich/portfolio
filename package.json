@@ -1,57 +1,52 @@
 {
-  "name": "personal",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "@evillt/vuedown-loader": "^1.0.1",
-    "highlight.js": "^9.16.2",
-    "register-service-worker": "^1.0.0",
-    "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2",
-    "tailwindcss": "^0.6.6",
-    "vue": "^2.5.17",
-    "vue-images-loaded": "^1.1.2",
-    "vue-meta": "^2.3.1",
-    "vue-router": "^3.0.1",
-    "vuedown": "^3.2.0",
-    "vuex": "^3.0.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.1",
-    "@vue/cli-plugin-eslint": "^3.0.1",
-    "@vue/cli-plugin-pwa": "^3.0.1",
-    "@vue/cli-service": "^3.0.1",
-    "@vue/eslint-config-airbnb": "^3.0.4",
-    "vue-template-compiler": "^2.5.17"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "personal",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/airbnb"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {},
-      "tailwindcss": "tailwind.js"
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "dependencies": {
+        "@evillt/vuedown-loader": "^1.0.1",
+        "highlight.js": "^9.16.2",
+        "register-service-worker": "^1.0.0",
+        "stylus": "^0.54.7",
+        "stylus-loader": "^3.0.2",
+        "tailwindcss": "^0.6.6",
+        "vue": "^2.5.17",
+        "vue-images-loaded": "^1.1.2",
+        "vue-meta": "^2.3.1",
+        "vue-router": "^3.0.1",
+        "vuedown": "^3.2.0",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.0.1",
+        "@vue/cli-plugin-pwa": "^3.0.1",
+        "@vue/cli-service": "^3.0.1",
+        "vue-template-compiler": "^2.5.17"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "@vue/airbnb"
+        ],
+        "rules": {}
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {},
+            "tailwindcss": "tailwind.js"
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
 }

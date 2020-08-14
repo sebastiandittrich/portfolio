@@ -37,6 +37,13 @@
 
 
 <script>
+import OpaqueLogo from '@/assets/images/opaque.png'
+import ArtfamilyLogo from '@/assets/images/artfamily.png'
+import AsozialesNetzwerkLogo from '@/assets/images/asozialesnetzwerk.png'
+import DKDLogo from '@/assets/images/dkd.svg'
+import RememberLinkLogo from '@/assets/images/rememberlink.svg'
+import TodoninjaLogo from '@/assets/images/todoninja.svg'
+
 export default {
   data() {
     return {
@@ -44,41 +51,41 @@ export default {
         {
           name: 'Opaque JS',
           description: 'A client-side Javascript ORM for any API.',
-          image: 'https://opaquejs.github.io/logo.png',
+          image: OpaqueLogo,
           url: 'https://opaquejs.github.io',
         },
         {
           name: 'Todoninja',
           description: 'An extended Todo-App optimized for mobile usage.',
-          image: 'img/todoninja.svg',
+          image: TodoninjaLogo,
           url: 'https://todoninja.de',
         },
         {
           name: 'remember.link',
           description:
             'A link shortener with customizable and better memorizable links.',
-          image: 'img/rememberlink.svg',
+          image: RememberLinkLogo,
           url: 'https://link.playground.todoninja.de',
         },
         {
           name: 'Artfamily',
           description:
             'An online artwork forum for sharing your creations and sketches with artists around the world.',
-          image: 'img/artfamily.png',
+          image: ArtfamilyLogo,
           url: 'https://art.todoninja.de',
         },
         {
           name: 'DKD',
           description:
             'A kind of fashion brand that we wear and design with my friends.',
-          image: 'img/dkd.svg',
+          image: DKDLogo,
           url: 'https://dkdmerch.de',
         },
         {
           name: 'Asocial Network',
           description:
             'This is an anti-social network inspired by the "Känguru-Chroniken" authored by Marc Uwe Kling.',
-          image: 'img/asozialesnetzwerk.png',
+          image: AsozialesNetzwerkLogo,
           url: 'http://asozialesnetzwerk.com',
         },
       ],

@@ -2,11 +2,11 @@
     <div class="p-8 bg-grey-lighter flex flex-col justify-center items-stretch border-t">
         <div class="font-bold text-sm tracking-wide uppercase text-center">Follow me on my social network accounts!</div>
         <div class="flex flex-row items-center justify-center mt-8">
-            <social-profile link="https://twitter.com/@schnaubolaut" image="/img/twitter.png" name="Twitter"></social-profile>
-            <social-profile link="https://art.todoninja.de/@basti" image="/img/artfamily.png" class="ml-8" name="Artfamily"></social-profile>
-            <social-profile link="https://www.instagram.com/minus_banane/" image="/img/instagram.png" class="ml-8" name="Instagram"></social-profile>
-            <social-profile link="https://github.com/sebastiandittrich" image="/img/github.png" class="ml-8" name="Github"></social-profile>
-            <social-profile link="https://gitlab.com/sebastiandittrich" image="/img/gitlab.png" class="ml-8" name="Gitlab"></social-profile>
+            <social-profile link="https://twitter.com/@schnaubolaut" :image="images.TwitterImage" name="Twitter"></social-profile>
+            <social-profile link="https://art.todoninja.de/@basti" :image="images.ArtfamilyImage" class="ml-8" name="Artfamily"></social-profile>
+            <social-profile link="https://www.instagram.com/minus_banane/" :image="images.InstagramImage" class="ml-8" name="Instagram"></social-profile>
+            <social-profile link="https://github.com/sebastiandittrich" :image="images.GithubImage" class="ml-8" name="Github"></social-profile>
+            <social-profile link="https://gitlab.com/sebastiandittrich" :image="images.GitlabImage" class="ml-8" name="Gitlab"></social-profile>
         </div>
 
         <div class="font-bold text-sm tracking-wide uppercase text-center mt-16">Credits</div>
@@ -22,9 +22,24 @@
 <script>
 import SocialProfile from '@/components/SocialProfile'
 
+import TwitterImage from '@/assets/images/twitter.png'
+import GithubImage from '@/assets/images/github.png'
+import GitlabImage from '@/assets/images/gitlab.png'
+import InstagramImage from '@/assets/images/instagram.png'
+import ArtfamilyImage from '@/assets/images/artfamily.png'
+
 export default {
     components: {
         SocialProfile,
-    }
+    },
+    data: () => ({
+        images: {
+            TwitterImage,
+            GithubImage,
+            GitlabImage,
+            InstagramImage,
+            ArtfamilyImage,
+        }
+    }),
 }
 </script>
