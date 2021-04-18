@@ -1,0 +1,7 @@
+{
+    "name": "Personal Portfolio",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "portfolio",
+    "workspaceFolder": "/app",
+    "shutdownAction": "stopCompose"
+  }
