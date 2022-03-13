@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - portfolio.ocean.dkdmerch.de
+        - owner.todoninja.de
       secretName: letsencrypt-prod
   rules:
-    - host: portfolio.ocean.dkdmerch.de
+    - host: owner.todoninja.de
       http:
         paths:
           - path: /
