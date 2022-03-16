@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+body {
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  @apply text-gray-700;
+}
+.link {
+  @apply font-bold text-gray-700 transition border-b-2 border-gray-500 whitespace-nowrap;
+}
+
+.link:hover {
+  @apply text-black border-black;
+}
+@tailwind utilities;

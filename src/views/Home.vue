@@ -1,37 +1,20 @@
 <template>
-  <div
-    class="bg-grey-lightest p-8 flex flex-col items-center justify-start py-16"
-    style="min-height: 100vh;"
-  >
+  <div class="bg-gray-100 p-8 flex flex-col items-center justify-start py-16" style="min-height: 100vh;">
     <div class="flex flex-col items-center space-around">
-      <div
-        class="p-2 border border-blue-lighter rounded-full flex flex-row items-center justify-center"
-      >
-        <div
-          class="p-2 border-2 border-blue-light rounded-full flex flex-row items-center justify-center"
-        >
-          <div
-            class="p-2 border-4 border-blue rounded-full flex flex-row items-center justify-center"
-          >
-            <img
-              :src="avatar_image"
-              class="w-48 h-48 rounded-full"
-              alt="Me taking a Picture with my mobile phone"
-            />
+      <div class="p-2 border border-orange-200 rounded-full flex flex-row items-center justify-center">
+        <div class="p-2 border-2 border-orange-400 rounded-full flex flex-row items-center justify-center">
+          <div class="p-2 border-4 border-orange-500 rounded-full flex flex-row items-center justify-center">
+            <img :src="avatar_image" class="w-48 h-48 rounded-full" alt="Me smiling" />
           </div>
         </div>
       </div>
-      <h1 class="mt-16 text-4xl text-center text-black font-normal">
+      <h1 class="mt-16 text-4xl text-center text-black font-light">
         Hello, I'm
         <span class="font-bold whitespace-no-wrap">Sebastian Dittrich</span>.
       </h1>
-      <div class="mt-8 text-2xl text-center">
-        I'm a <span class="font-bold">{{ age }} year old</span> programmer
-        living in Dresden,
-        <span class="font-bold">
-          Ge<span class="text-red-light">rma</span
-          ><span class="text-yellow-dark">ny</span></span
-        >
+      <div class="mt-8 text-2xl text-center font-light">
+        I'm a <span class="font-bold">{{ age }} year old</span> programmer living in Dresden,
+        <span class="font-bold"> Ge<span class="text-red-500">rma</span><span class="text-yellow-400">ny</span></span>
       </div>
     </div>
 
@@ -39,95 +22,14 @@
       <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">
         Some of my Projects
       </div>
-      <projects class="self-start mt-4"></projects>
-    </div>
-
-    <div class="container mx-auto max-w-lg">
-      <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">
-        Blog Highlights
-      </div>
-      <div class="shadow-md bg-white rounded-lg mt-4">
-        <blog-overview
-          v-for="highlight of highlight"
-          :key="highlight.slug"
-          :image="false"
-          class="p-6 border-b"
-          :article="highlight"
-        ></blog-overview>
-      </div>
-      <router-link
-        to="/blog"
-        class="block mt-4 rounded-lg bg-grey-light p-2 font-bold uppercase leading-tight text-center text-sm"
-      >
-        Read more
-      </router-link>
+      <Projects class="self-start mt-4"></Projects>
     </div>
   </div>
 </template>
 
-<style scoped>
-/* @keyframes avatar-in {
-    0% {
-      transform: scale(0);
-    }
-    33% {
-      transform: scale(1);
-      box-shadow: 0px 0px 0px .75rem #a54a2b70,
-    }
-    66% {
-      box-shadow: 0px 0px 0px .75rem #a54a2b70,
-                  0px 0px 0px 1.5rem #a54a2b30,
-    }
-    100% {
-      box-shadow: 0px 0px 0px .75rem #a54a2b70,
-                  0px 0px 0px 1.5rem #a54a2b30,
-                  0px 0px 0px 2.25rem #a54a2b10;
-    }
-  } */
+<script setup lang="ts">
+import avatar_image from "../assets/images/avatar.jpg";
+import Projects from "../components/Projects.vue";
 
-.avatar-img {
-  /* animation: avatar-in 3000ms ease-out forwards; */
-  box-shadow: 0px 0px 0px 0.75rem #a54a2b70, 0px 0px 0px 1.5rem #a54a2b30,
-    0px 0px 0px 2.25rem #a54a2b10;
-}
-</style>
-
-
-<script>
-import Projects from '@/components/Projects'
-import SupportMe from '@/components/SupportMe'
-import BlogOverview from '@/components/blog/Overview'
-import SocialProfile from '@/components/SocialProfile'
-
-import AvatarImage from '@/assets/images/avatar.jpg'
-
-import { highlight } from '@/blog'
-
-export default {
-  components: {
-    Projects,
-    SupportMe,
-    BlogOverview,
-    SocialProfile,
-  },
-  data: () => ({
-    loading_highlight: highlight,
-    avatar_image: AvatarImage,
-  }),
-  computed: {
-    age() {
-      return Math.floor(
-        (new Date().getTime() - new Date('10/30/2001').getTime()) /
-          1000 /
-          60 /
-          60 /
-          24 /
-          365.25
-      )
-    },
-    highlight() {
-      return this.loading_highlight.filter((item) => item.loaded)
-    },
-  },
-}
+const age = Math.floor((new Date().getTime() - new Date("10/30/2001").getTime()) / 1000 / 60 / 60 / 24 / 365.25);
 </script>

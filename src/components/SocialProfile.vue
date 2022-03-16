@@ -1,19 +1,13 @@
 <template>
-    <div>
-        <a rel="noopener" :href="link" target="_blank">
-            <img :src="image" class="w-8 h-auto" :alt="name" :title="name">
-        </a>
-    </div>
+  <div>
+    <a rel="noopener" :href="link" target="_blank">
+      <img :src="image" class="w-8 h-auto" :alt="name" :title="name" />
+    </a>
+  </div>
 </template>
 
-<script>
-export default {
-    props: {
-        link: String,
-        image: String,
-        name: String,
-    }
-}
+<script lang="ts" setup>
+defineProps<{ link: string; image: string; name: string }>();
 </script>
 
 <style lang="stylus" scoped>
