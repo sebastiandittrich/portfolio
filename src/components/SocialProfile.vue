@@ -10,9 +10,11 @@
 defineProps<{ link: string; image: string; name: string }>();
 </script>
 
-<style lang="stylus" scoped>
-a img
-    transition all 100ms
-a:hover img
-    transform scale(1.1)
+<style scoped>
+a > img {
+    transition: all 100ms
+}
+a:hover > img {
+    transform: scale(1.1)
+}
 </style>
