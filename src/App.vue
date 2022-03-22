@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { nextTick, onMounted, ref } from "vue";
+import { onMounted, ref } from "vue";
 import Footer from "./components/Footer.vue";
 
 const imagesloaded = ref(false);
