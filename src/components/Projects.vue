@@ -1,5 +1,19 @@
 <template>
-  <div>
+  <div class="flex flex-col items-stretch gap-8 max-w-5xl">
+    <Project
+      name="Becker Steuerberater"
+      url="https://beckersteuerberater.de"
+      description="Migrated the online presence from Webflow to a dedicated hosting solution, added a job opportunities page and customized the responsive design. Currently taking care of the hosting."
+      :image="MikaBecker"
+      :links="{ 'Read more': 'test.de' }"
+    ></Project>
+    <Project
+      name="Karsunke Immobilien"
+      url="https://karsunke-immobilien.com"
+      description="Implemented and partially co-designed the online presence of Karsunke Immobilien. In addition, currently taking care of the hosting."
+      :image="KarsunkeImmobilien"
+      :links="{ 'Read more': 'test.de' }"
+    ></Project>
     <Project
       name="Todoninja v3"
       url="https://github.com/todoninja"
@@ -38,5 +52,7 @@ import AsozialesNetzwerkLogo from "../assets/images/asozialesnetzwerk.png";
 import DKDLogo from "../assets/images/dkd.svg";
 import RememberLinkLogo from "../assets/images/rememberlink.png";
 import TodoninjaLogo from "../assets/images/todoninja.svg";
+import KarsunkeImmobilien from "../assets/images/karsunke-immobilien.png";
+import MikaBecker from "../assets/images/mikabecker.svg";
 import Project from "./Project.vue";
 </script>
