@@ -22,7 +22,7 @@
       <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Some of my Projects</div>
       <Projects class="self-start mt-4"></Projects>
     </div>
-    <Footer class="self-stretch mt-16" />
+    <Footer class="self-stretch mt-16 -m-8" />
   </div>
 </template>
 
