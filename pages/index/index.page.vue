@@ -4,7 +4,7 @@
       <div class="p-2 border border-orange-200 rounded-full flex flex-row items-center justify-center">
         <div class="p-2 border-2 border-orange-400 rounded-full flex flex-row items-center justify-center">
           <div class="p-2 border-4 border-orange-500 rounded-full flex flex-row items-center justify-center">
-            <img :src="avatar_image" class="w-48 h-48 rounded-full" alt="Me smiling" />
+            <img src="@/assets/images/avatar.jpg?webp&h=300" class="w-48 h-48 rounded-full" alt="Me smiling" />
           </div>
         </div>
       </div>
@@ -27,7 +27,6 @@
 </template>
 
 <script setup lang="ts">
-import avatar_image from "@/assets/images/avatar.jpg";
 import Projects from "@/components/Projects.vue";
 import Footer from "../../components/Footer.vue";
 
