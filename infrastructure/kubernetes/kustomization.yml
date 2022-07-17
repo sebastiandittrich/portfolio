@@ -1,4 +1,0 @@
-commonLabels:
-  app: personal-portfolio
-resources:
-  - app.yml
