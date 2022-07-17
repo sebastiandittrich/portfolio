@@ -23,10 +23,10 @@
 </template>
 
 <script lang="ts" setup>
-import twitter_image from "../assets/images/twitter.png";
-import github_image from "../assets/images/github.png";
-import gitlab_image from "../assets/images/gitlab.png";
-import instagram_image from "../assets/images/instagram.png";
+import twitter_image from "../assets/images/twitter.png?webp&h=50";
+import github_image from "../assets/images/github.png?webp&h=50";
+import gitlab_image from "../assets/images/gitlab.png?webp&h=50";
+import instagram_image from "../assets/images/instagram.png?webp&h=50";
 import SocialProfile from "./SocialProfile.vue";
 import Link from "@/components/Link.vue";
 </script>

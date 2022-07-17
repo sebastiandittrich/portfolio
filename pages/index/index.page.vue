@@ -20,7 +20,7 @@
 
     <div>
       <div class="font-bold self-start mt-16 uppercase tracking-wide text-sm">Some of my Projects</div>
-      <Projects class="self-start mt-4"></Projects>
+      <Projects :projects="projects" class="self-start mt-4"></Projects>
     </div>
     <Footer class="self-stretch mt-16 -m-8" />
   </div>
@@ -29,6 +29,8 @@
 <script setup lang="ts">
 import Projects from "@/components/Projects.vue";
 import Footer from "../../components/Footer.vue";
+
+defineProps<{ projects: { name: string; link: string; description: string; logo: string; discontinued: string }[] }>();
 
 const age = Math.floor((new Date().getTime() - new Date("10/30/2001").getTime()) / 1000 / 60 / 60 / 24 / 365.25);
 </script>
