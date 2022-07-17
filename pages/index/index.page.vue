@@ -12,7 +12,7 @@
         Hello, I'm
         <span class="font-bold whitespace-no-wrap">Sebastian Dittrich</span>.
       </h1>
-      <div class="mt-8 text-2xl text-center font-light">
+      <div class="mt-8 text-2xl text-center font-light text-gray-800">
         I'm a <span class="font-bold">{{ age }} year old</span> programmer living in Dresden,
         <span class="font-bold"> Ge<span class="text-red-500">rma</span><span class="text-yellow-400">ny</span></span>
       </div>
