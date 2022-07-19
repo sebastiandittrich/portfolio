@@ -1,0 +1,7 @@
+packages:
+  - name: notion-cms
+    actions:
+      - name: rebuild
+        main: ""
+        runtime: "nodejs:18"
+        web: true
