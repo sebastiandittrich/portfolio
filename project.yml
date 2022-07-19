@@ -5,3 +5,5 @@ packages:
         main: ""
         runtime: "nodejs:18"
         web: true
+        environment:
+          TEST: "${TEST}"
