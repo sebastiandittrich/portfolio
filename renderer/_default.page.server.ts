@@ -26,6 +26,9 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap" defer />
         <meta name="description" content="${desc}" />
         <title>${title}</title>
+        <!-- Fathom - beautiful, simple website analytics -->
+        <script src="https://cdn.usefathom.com/script.js" data-spa="auto" data-site="KIOUAQTJ" defer></script>
+        <!-- / Fathom -->
       </head>
       <body>
         <div id="app">${dangerouslySkipEscape(appHtml)}</div>
