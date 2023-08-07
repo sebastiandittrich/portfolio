@@ -10,15 +10,15 @@ export { render };
 export const passToClient = ["pageProps", "urlPathname"];
 
 async function render(pageContext: PageContextBuiltIn & PageContext) {
-  const app = createApp(pageContext);
-  const appHtml = await renderToString(app);
+    const app = createApp(pageContext);
+    const appHtml = await renderToString(app);
 
-  // See https://vite-plugin-ssr.com/head
-  const { documentProps } = pageContext;
-  const title = (documentProps && documentProps.title) || "Sebastian Dittrich";
-  const desc = (documentProps && documentProps.description) || "A software developer from Dresden. ";
+    // See https://vite-plugin-ssr.com/head
+    const { documentProps } = pageContext;
+    const title = (documentProps && documentProps.title) || "Sebastian Dittrich";
+    const desc = (documentProps && documentProps.description) || "A software developer from Dresden. ";
 
-  const documentHtml = escapeInject`<!DOCTYPE html>
+    const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
@@ -29,16 +29,17 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
         <!-- Fathom - beautiful, simple website analytics -->
         <script src="https://cdn.usefathom.com/script.js" data-spa="auto" data-site="KIOUAQTJ" defer></script>
         <!-- / Fathom -->
+        <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js" id="pirschextendedjs" data-code="acFL7OU14FSZ11BKDC8IWJN5uHjqeRmq"></script>
       </head>
       <body>
         <div id="app">${dangerouslySkipEscape(appHtml)}</div>
       </body>
     </html>`;
 
-  return {
-    documentHtml,
-    pageContext: {
-      // We can add some `pageContext` here, which is useful if we want to do page redirection https://vite-plugin-ssr.com/page-redirection
-    },
-  };
+    return {
+        documentHtml,
+        pageContext: {
+            // We can add some `pageContext` here, which is useful if we want to do page redirection https://vite-plugin-ssr.com/page-redirection
+        },
+    };
 }
