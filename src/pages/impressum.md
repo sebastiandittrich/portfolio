@@ -9,11 +9,11 @@ author: Himanshu
 ## Angaben gemäß §5 TMG
 
 Dittrich Ventures UG (haftungsbeschränkt)<br />
-Bräuergasse 7<br />
-01067 Dresden
+Richeystraße 55<br />
+22309 Hamburg
 
-Sitz: Dresden<br />
-Handelsregister: Amtsgericht Dresden, HRB 44907<br />
+Sitz: Hamburg<br />
+Handelsregister: Amtsgericht Hamburg, HRB 185834<br />
 Geschäftsführer: Sebastian Dittrich<br />
 Umsatzsteuer-Identifikationsnummer: DE365904744
 

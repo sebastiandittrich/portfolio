@@ -15,11 +15,11 @@ Der Schutz Ihrer personenbezogenen Daten und Ihrer Privatsphäre ist uns, der Di
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO), des Bundesdatenschutzgesetzes (BDSG) sowie sonstiger datenschutzrechtlicher Vorgaben ist die
 
 Dittrich Ventures UG (haftungsbeschränkt)<br />
-Bräuergasse 7<br />
-01067 Dresden
+Richeystraße 55<br />
+22309 Hamburg
 
-Sitz: Dresden<br />
-Handelsregister: Amtsgericht Dresden, HRB 44907<br />
+Sitz: Hamburg<br />
+Handelsregister: Amtsgericht Hamburg, HRB 185834<br />
 Geschäftsführer: Sebastian Dittrich<br />
 Umsatzsteuer-Identifikationsnummer: DE365904744
 
@@ -273,10 +273,10 @@ Die Verarbeitung ist bis zu Ihrem Widerruf rechtmäßig – der Widerruf wirkt s
 Ihr Widerruf ist zu richten an:
 
 Dittrich Ventures UG (haftungsbeschränkt)<br />
-Bräuergasse 7<br />
-01067 Dresden
+Richestraße 55<br />
+22309 Hamburg
 
-Amtsgericht Dresden, HRB 44907
+Amtsgericht Hamburg, HRB 185834
 
 E-Mail: sebastian@dittrich.dev<br />
 Tel: +49 170 6310370
