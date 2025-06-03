@@ -18,7 +18,7 @@ Geschäftsführer: Sebastian Dittrich<br />
 Umsatzsteuer-Identifikationsnummer: DE365904744
 
 ## Kontaktaufnahme
-Telefon: +49 170 6310370<br />
+Telefon: +49 157 92350544<br />
 E-Mail: sebastian@dittrich.dev
 
 ## Haftung für Inhalte
